@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-bg : #153131;
+    --color-primary : #16C172;
+    --color-primary-variant : #029038;
+
+    --transition : 500ms linear;
+}
+
+
+body{
+    background-color: var(--color-bg);
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.calculator__container{
+    background-color: var(--color-primary);
+    padding: 2rem;
+    text-align: center;
+    width: 30%;
+    border-radius: 8px;
+    color: white;
+    -webkit-box-shadow: 3px 3px 10px 3px var(--color-primary-variant);
+    -moz-box-shadow : 3px 3px 10px 3px var(--color-primary-variant);
+    box-shadow: 3px 3px 10px 3px var(--color-primary-variant);
+}
+.out__screen{
+    background-color: #153131;
+    padding: 1.4rem 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+.cal__portion{
+    overflow-x: auto ;
+}
+.result__portion{
+    font-size: 2rem;
+}
+.row div p{
+    background-color: #153131;
+    padding: 1rem 0;
+    margin: 0.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 200;
+
+}
+.row div{
+    padding: 0;
+}
+.main__button{
+    background-color: #A63D40 !important;
+}
+
+/* ==================MEDIA QURIES (MEDIUM DEVICES)=============== */
+
+@media screen and (max-width:1024px){
+    .calculator__container{
+        width: 50%;
+    }
+}
+
+/* ==================MEDIA QURIES (SMALL DEVICES)=============== */
+
+@media screen and (max-width:600px) {
+    .calculator__container{
+        width: 90%;
+    }
+    
+}
